@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgrey;
+
+            /*Simplificando o "BORDER" EX:border 10px solid darkgrey na mesma tag border vai os tres paramentros width, style e cor.*/
+
+            border: 10px solid darkgray;/*Simplificado chama-se SHORTHAND*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; 
+
+            /*Simplificando o "PADDING" EX: 10px 10PX 10PX 10PX OBS: OS VALORES CITADOS SEGUE NO SENTIDO HORÁRIO RELACIONADO COM TOP=CIMA RIGHT = DIREITA BOTTOM = BAIXO E LEFT = ESQUERDA, NO (PADDING) QUANDO O VALOR FOR IGUAL PARA AS QUATRO OPÇÕES CONFORME O EXEMPLO ACIMA PODEMOS ADICIONAR APENAS 1 VEZ. EX: PADDING: 10PX;*/
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom:10px ;
+            margin-left: 10px;
+
+            /*Simplificando o "MARGIN" EX: 10px AUTO 10PX AUTO OBS: OS VALORES CITADOS SEGUE NO SENTIDO HORÁRIO RELACIONADO COM TOP=CIMA RIGHT = DIREITA BOTTOM = BAIXO E LEFT = ESQUERDA, NO (MARGIN) UTILIZAMOS AUTO PARA AS TAG RIGHT E LEFT = DIREITA E ESQUERDA VEZ. EX: PADDING: 10PX;*/
+
+        }
+
+        a{
+            border-width: 10px;
+            border-style: double;
+            border-color: red;  
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragráfos também são exemplos de box-level, mais os <a href="#">Links são exemplos de caixas inline-level </a>. Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>
