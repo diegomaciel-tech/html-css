@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML.</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p> Abra este site em varios dispositivo diferente ou aumente ou diminua seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+         <img src="imagens/foto-g.png" alt="imagem flexivel
+        ">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir áudios em html 5.</p>
+    <audio src="Midia/mistake.mp3" controls  autoplay></audio>
+    <p> Obs: a tag <strong>(AUTOPLAY)</strong> serve para o audio tocar automaticamente,<br> já a tag <strong>(CONTROLS)</strong>, Serve para mostrar o controle de Audio.</p>
+
+    <H1>Para Colocar Mais de um tipo de formato de Audio:</H1>
+    <Audio preload="metadata" autoplay controls loop>
+        <source src="Midia/guana.mp3" type="audio/mpeg">
+        <source src="Midia/guana.org" type="audio/org">
+        <source src="Midia/guana.wav" type="audio/wav">
+        <p>SE o Navegador não consegui reproduzir audio clique <a href="Midia/mistake.mp3">Aqui</a></p>
+    </Audio >
+    <p> Na tag <strong>preload</strong> tem 3 paramentos: <strong>Auto:</strong> ele só vai considerar que o site carregou depois que carregar todo o audio <strong>(PERIGOSO!!!)</strong><br><strong>Metada:</strong> carregas alguns detalhes. <br><strong>None:</strong> Não carrega absolutamente nada o audio só tocar se apertar o play. </p>
+
+    <p>Na tag <strong>(LOOP)</strong> serve para quando o audio chegar no final e volta a ser Reproduzindo</p>
+
+    <h1>Inserindo Videos Hospedado Localmente</h1>
+    <p>Este video está hospedado no meu servidor</p>
+    
+    <video width="560" controls poster="Imagens/limoes-capa.png"> 
+        <source src="Videos/meu-video.mp4" type="video/mp4">
+        <source src="Videos/meu-video.ogv" type="video/ogg">
+        <source src="Videos/meu-video.webm" type="vide/webm">
+
+    </video>
+
+    <h1>Inserindo Videos do Youtube.</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ptbk2af68e8?si=QlQiigRN3NKiXI51" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>

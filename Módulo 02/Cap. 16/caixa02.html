@@ -1,0 +1,129 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 1px;
+        }
+
+        header {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102,102,102);
+            padding: 10px;/* esta tag amplia a area do background color:*/
+            
+            
+        }
+
+
+        nav > a {
+             
+            padding: 3px;
+            font-size: 18px;
+            text-decoration: none;
+            color:white;
+            font-weight: bold;
+            margin-right: 30px; /* esta tag coloca a distancia de um link para o outro a direita*/
+            box-shadow: 2px 2px 2px black;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: rgb(147, 233, 233);
+            box-shadow: 2px 2px 2px aqua;
+        }
+
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 1px; /*esta tags faz o arredondamento das bordas, OBS: NESTA TAG PODEMOS COLOCAR PARA LAYOUT DOIS VALORES O 1º IRÁ ARREDONDAR LADO SUPERIOR ESQUERDO E LADO INFERIOR DIREITO E O 2º IRÁ ARREDONDAR LADO SUPERIOR DIREITO E LADO INFERIOR ESQUERDO*/
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
+        }
+
+            article {
+                background-color: lightgray;
+                padding: 5px;
+                margin: 1px;
+            }
+        article > aside{
+            background-color: rgb(165, 165, 165);
+        }   
+        
+        footer {
+            background-color: black;
+            color: white;
+             text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+         #bola{/*configuração para transformar um quadrado em uma bola com css */
+            height: 100px;
+            width: 100px;
+            margin: 30px;
+            border-radius: 50%;
+
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <header><!--Cabeçalho-->
+        <h1>Web site</h1>
+        <nav><!--nave-->
+            <a href="#">Link </a>
+            <a href="#">Link </a>
+            <a href="#">Link </a>
+             <a href="#">Link </a>
+        </nav>
+    </header>
+        <main><!--Conteúdo Principal-->
+            <section id="assuntos"><!--seção-->
+                <p>Esportes Política e    Tecnologia</p>
+
+            </section>
+            <section id="noticias"><!--seção-->
+                <article><!--artigo-->
+                    
+                        <h2>Notícia sobre o Brasil</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae aliquam a animi repellat ipsum totam adipisci accusantium, magni, deleniti fugit incidunt commodi placeat illo officiis quisquam nostrum illum, laudantium temporibus!</p>
+                        <aside><!--além dos paragrafos temos a tag aside que é relativo ao artigo-->
+                            <p>Artigo escrito por José da Silva.</p>
+
+                    </aside>
+
+                </article>
+
+            </section>
+            <!--Obs: pode ser usado article dentro de section ou vice versa -->
+
+        </main>
+        <footer><!--Rodapé-->
+            <p>Desenvolvido pelo curso em video.</p>
+
+        </footer>
+        <div id="bola">
+
+        </div>
+
+
+
+    
+    
+</body>
+</html>

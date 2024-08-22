@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Para utilizar lista ordenada utilizaremos a tag (ol) ela irá organizar de forma automatica caso você preciso mudar a ordem</p> 
+    <p>Para organizar a lista com numeros, ponto, numero romano utilizamos a tag (type dentro da tag ol)</p>
+    <p>Ex: ( ol type="1" )</p>
+    <ol>
+    <li>Acordar
+    <li>tomar caé
+    <li>escovar os dentes
+    <li>lavar Roupa
+    </ol>
+
+    <h2>Listas Não Ordenadas</h2>
+    <p>para as listas não ordenadas utilazamos a tag: (ul), pode ser usado dentro da ul o parametro type para definir o tipo de inicio da lista, pode ser marcado como: ( disc, circle square) ex: (type="square")</p>
+
+    <ul type="disc"><p><strong><q>Formato disc</q></strong></p>
+        <li>pão</li>
+        <li>arroz</li>
+
+    </ul>
+
+    <ul type="square"><p><strong><q>Formato square</q></strong></p>
+        <li>pão</li>
+        <li>arroz</li>
+
+    </ul>
+
+    <ul type="circle"><p><strong><q>Formato circle</q></strong></p>
+        <li>pão</li>
+        <li>arroz</li>
+
+    </ul>
+
+    <h1>Juntando listas</h1>
+    
+    <h2>Minhas linguagem favoritas</h2>
+  
+    <ol>
+        <li>Antigas</li>    
+    <ol type="a">
+        <li>clippe</li>
+        <li>visual</li>
+        <li>fortran</li>
+    </ol>
+    <li>Novas</li>
+    <ol type="a" start="4">
+        <li>php</li>
+        <li>python</li>
+        <li>java</li>
+    </ol>
+    </ol>
+    <h2>Para juntar e organizar as listas antigas e novas citado no exemplo acima de forma crescente por numero ou letra utilizaremos a tag start dento da tag ol ex: <strong>(ol type="a" start="4")</strong> Note que é preciso contar onde para o numero da primeira lista e adicionar o proximo numero na tag <B>(START)</B> conforme no exemplo a 1º lista vai até ao 3º item e adicionamos o numero 4 para a <B>(START)</B></h2>
+
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+
+    <h1>Lista de Definição</h1>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+    
+</body>
+</html>

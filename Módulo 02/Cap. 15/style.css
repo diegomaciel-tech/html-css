@@ -1,0 +1,18 @@
+@charset "utf-8"
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: darkslategray;
+}
+
+h1#principal{
+    text-align: center;
+    text-shadow: 30px 30px 30px black;
+}
+
+h2{
+    color: gold;
+}
